@@ -4,7 +4,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "ciy68-layouts.dtsi" // Para ZMK Studio
+// #include "ciy68-layouts.dtsi" // Para ZMK Studio
 
 / {
     chosen {

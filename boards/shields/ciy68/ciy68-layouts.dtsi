@@ -1,8 +1,8 @@
-#include <layouts/common/65percent/position_map.dtsi>
+// #include <layouts/common/65percent/position_map.dtsi>
 #include <physical_layouts.dtsi>
 
 / {
-    layout_65_ansi: layout_65_ansi {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "65% ANSI";
 
