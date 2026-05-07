@@ -61,7 +61,15 @@ RC(11,4)       RC(2,3) RC(2,10) RC(12,2) RC(5,2) RC(15,6) RC(9,8) RC(6,8) RC(13,
 RC(5,15)   RC(12,16)   RC(5,6)                RC(12,11)                  RC(6,3)   RC(3,8)   RC(12,15)  RC(8,11)        RC(14,11) RC(15,11)
         >;
     };
-
+    
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default";
+        /* If you use ZMK Studio / physical layouts, add the required properties here.
+         * The key point for the build failure is that the label exists.
+         */
+    };
+    
     vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
     };
