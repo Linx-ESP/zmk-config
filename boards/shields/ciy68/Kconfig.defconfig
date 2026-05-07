@@ -4,3 +4,5 @@ config ZMK_KEYBOARD_NAME
     default "ciy68"
 
 endif
+
+CONFIG_ZMK_STUDIO_LOCKING=n
