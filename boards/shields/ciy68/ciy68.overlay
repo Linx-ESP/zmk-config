@@ -10,6 +10,7 @@
     chosen {
         zmk,physical-layout = &default_layout;
         zmk,battery = &vbatt;
+        zmk,kscan = &kscan0;
     };
 
     kscan0: kscan0 {
