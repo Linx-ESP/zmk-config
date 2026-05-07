@@ -3,14 +3,19 @@
 // instructions.
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/common/65percent/ansi.dtsi> // Para ZMK Studio
 
-// #include "ciy68-layouts.dtsi" // Para ZMK Studio
+&layout_65_ansi {
+//    transform = <&ansi_transform>;
+//    kscan = <&ansi_kscan>;
+};
 
 / {
     chosen {
         zmk,physical-layout = &default_layout;
         zmk,battery = &vbatt;
         zmk,kscan = &kscan0;
+        zmk,physical-layout = &layout_65_ansi;
     };
 
     kscan0: kscan0 {
