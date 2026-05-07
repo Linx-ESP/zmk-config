@@ -22,4 +22,6 @@ include:
   - board: nice_nano@2.0.0//zmk
     shield: ciy68
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    snippet: zmk-usb-logging
+    snippet: 
+      - zmk-usb-logging
+      - studio-rpc-usb-uart
