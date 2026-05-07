@@ -5,14 +5,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/common/65percent/ansi.dtsi> // Para ZMK Studio
 
-&layout_65_ansi {
-//    transform = <&ansi_transform>;
-//    kscan = <&ansi_kscan>;
-};
 
 / {
     chosen {
-        zmk,physical-layout = &default_layout;
+//        zmk,physical-layout = &default_layout;
         zmk,battery = &vbatt;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &layout_65_ansi;
@@ -68,16 +64,22 @@ RC(5,15)   RC(12,16)   RC(5,6)                RC(12,11)                  RC(6,3)
         >;
     };
     
-    default_layout: default_layout {
-        transform = <&default_transform>;
-        compatible = "zmk,physical-layout";
-        display-name = "Default";
-        /* If you use ZMK Studio / physical layouts, add the required properties here.
-         * The key point for the build failure is that the label exists.
-         */
-    };
+//    default_layout: default_layout {
+//        transform = <&default_transform>;
+//        compatible = "zmk,physical-layout";
+//        display-name = "Default";
+//        /* If you use ZMK Studio / physical layouts, add the required properties here.
+//         * The key point for the build failure is that the label exists.
+//         */
+//   };
 
     vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
     };
+};
+
+
+&layout_65_ansi {
+    transform = <&default_transform>;
+//    kscan = <&ansi_kscan>;
 };
